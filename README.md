@@ -122,7 +122,7 @@ plot\_3vars\_savefig.py. The difference between them is that the
 plot\_3vars\_savefig.py will in addition to trying to display
 the plot to the screen also save an image file named *myplot.png*.
 
-# Additional build options -- Compiler Optimization Level
+# Additional build options -- Compiler Optimization Level (OPTIONAL)
 
 As of the time of this writing (Oct 2023), most SFSU students will not need
 the information about different build options unless otherwise

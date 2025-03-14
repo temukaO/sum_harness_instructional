@@ -14,9 +14,8 @@
 #include <vector>
 #include <string.h>
 
-
-extern void setup(int64_t N, uint64_t A[]);
-extern int64_t sum(int64_t N, uint64_t A[]);
+extern void setup(int64_t N, double A[]);
+extern int64_t sum(int64_t N, double A[]);
 
 /* The benchmarking program */
 int main(int argc, char** argv) 
@@ -26,7 +25,7 @@ int main(int argc, char** argv)
 #define MAX_PROBLEM_SIZE 1 << 28  //  256M
    std::vector<int64_t> problem_sizes{ MAX_PROBLEM_SIZE >> 5, MAX_PROBLEM_SIZE >> 4, MAX_PROBLEM_SIZE >> 3, MAX_PROBLEM_SIZE >> 2, MAX_PROBLEM_SIZE >> 1, MAX_PROBLEM_SIZE};
    
-   std::vector<uint64_t> A(MAX_PROBLEM_SIZE);
+   double *A = (double *)malloc(sizeof(double) * MAX_PROBLEM_SIZE);
 
    int64_t t;
    int n_problems = problem_sizes.size();
