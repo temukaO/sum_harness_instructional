@@ -14,8 +14,7 @@
 #include <vector>
 #include <string.h>
 
-extern void setup(int64_t N, double A[]);
-extern int64_t sum(int64_t N, double A[]);
+#include "sums.h"
 
 /* The benchmarking program */
 int main(int argc, char** argv) 
@@ -27,12 +26,12 @@ int main(int argc, char** argv)
    
    double *A = (double *)malloc(sizeof(double) * MAX_PROBLEM_SIZE);
 
-   int64_t t;
    int n_problems = problem_sizes.size();
 
    /* For each test size */
    for (int64_t n : problem_sizes) 
    {
+      double t;
       printf("Working on problem size N=%lld \n", n);
 
       // invoke user code to set up the problem
@@ -45,7 +44,7 @@ int main(int argc, char** argv)
 
       // insert your end timer code here, and print out elapsed time for this problem size
 
-      printf(" Sum result = %lld \n",t);
+      printf(" Sum result = %lf \n",t);
 
    } // end loop over problem sizes
 }

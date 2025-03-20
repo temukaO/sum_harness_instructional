@@ -6,7 +6,7 @@
 #include <vector>
 #include <string.h>
 
-
+#include "sums.h"
 
 void 
 setup(int64_t N, double A[])
