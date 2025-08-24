@@ -9,13 +9,13 @@
 #include "sums.h"
 
 void 
-setup(int64_t N, double A[])
+setup(int64_t N, float A[])
 {
    printf(" inside sum_vector problem_setup, N=%lld \n", N);
 }
 
-double
-sum(int64_t N, double A[])
+float
+sum(int64_t N, float A[])
 {
    printf(" inside sum_vector perform_sum, N=%lld \n", N);
 
