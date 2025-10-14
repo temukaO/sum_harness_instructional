@@ -28,7 +28,10 @@ set(CMAKE_BUILD_TYPE "Release")
 # option 2 (works but not preferred): uncomment one of the following two lines then run/rerun cmake:
 
 # -O3 is full optimization in gcc/g++
-set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+#set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3")
+# -O1 is minimal optimization, avoids extraneous memory traffic
+#set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O1")
+set(CMAKE_CXX_FLAGS_RELEASE "-O1")
 # -O0 is no optimization in gcc/g++
 #set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O0")
 
