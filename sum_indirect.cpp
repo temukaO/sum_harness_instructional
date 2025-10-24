@@ -12,9 +12,9 @@ void
 setup(int64_t N, int64_t A[])
 {
    printf(" inside sum_indirect problem_setup, N=%lld \n", N);
-
+   
    for (int64_t i = 0; i < N; i++) {
-      A[i] = rand() % N;   // random index between 0 and N-1
+      A[i] = lrand48() % N;   // random index between 0 and N-1
    }
 }
 
